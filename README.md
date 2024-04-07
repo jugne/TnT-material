@@ -3,7 +3,7 @@
 This repository contains the code, needed to perform analyses and make figures presented in manuscript "Integrating Transmission Dynamics and Pathogen Evolution Through a
 Bayesian Approach" by U. Stolz, T.G. Vaughan and T. Stadler.
 
-To run all the scripts you will need Java (at least 8), R, python 3, and BEAST2.6.x. Ypu may need change paths, found at the beggining of each code file.
+To run all the scripts you will need Java (at least 8), R, python 3, and BEAST2.6.x. You may need change working directory paths in R scripts, found at the beggining of each code file.
 
 ## Validation and comparison
 
