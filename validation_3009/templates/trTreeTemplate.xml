@@ -1,0 +1,75 @@
+<beast version="2.0"
+       namespace="beast.core
+                 :beast.core.util
+                 :beast.core.parameter
+                 :beast.evolution.alignment
+                 :beast.evolution.likelihood
+                 :beast.evolution.tree
+                 :beast.evolution.tree.coalescent
+                 :beast.evolution.sitemodel
+                 :beast.evolution.substitutionmodel
+                 :beast.evolution.operators
+                 :beast.math.distributions
+                 :feast.simulation
+                 :bdmmprime.distribution
+                 :bdmmprime.parameterization
+                 :tnt.logger">
+
+  <simulatedTree spec="bdmmprime.trajectories.simulation.SimulatedTree"
+                 id="simulatedTree"
+                 insertMinSamples
+                 insertMaxSamples>
+
+    <finalSampleOffset id="finalSampleOffset" spec="RealParameter" value="0"/> <!-- Will be set by simulation -->
+    <numRejectedTrees id="numRejectedTrees" spec="RealParameter" value="0"/> <!-- Will be set by simulation -->
+    
+    <parameterization spec="EpiParameterization" id="parameterization">
+    	<typeSet id="typeSet" spec="bdmmprime.parameterization.TypeSet" value="0"/>
+      	<insertOrigin/>
+      	<R0 spec="SkylineVectorParameter" typeSet="@typeSet">
+      		<insertR0/>
+      	</R0>
+      	<becomeUninfectiousRate spec="SkylineVectorParameter" typeSet="@typeSet">
+      		<insertBecominUninfectiousRate/>
+      	</becomeUninfectiousRate>
+      	<samplingProportion spec="SkylineVectorParameter" typeSet="@typeSet">
+      		<insertsamplingProportion/>
+      	</samplingProportion>
+      	<removalProb spec="SkylineVectorParameter" typeSet="@typeSet">
+      		<insertRemovalProb/>
+      	</removalProb>
+      	<rhoSampling spec="TimedParameter" typeSet="@typeSet" timesAreAges="true" origin="@origin">
+        	<times spec="RealParameter" value="0.0"/>
+        	<insertRhoValues/>
+      	</rhoSampling>
+    </parameterization>
+
+
+    <frequencies spec="RealParameter" value="1.0"/>
+  </simulatedTree>
+  
+  <untypedTree spec="bdmmprime.trajectories.simulation.UntypedTreeFromTypedTree" id="untypedTree">
+  	<typedTree idref="simulatedTree"/>
+  </untypedTree>>
+
+  <run spec="GPSimulator" nSims="1">
+
+    <simulationObject idref="simulatedTree"/>
+
+    <logger spec="Logger" logEvery="1" fileName="$(filebase).log">
+      <log idref="finalSampleOffset"/>
+      <log idref="numRejectedTrees"/>
+      <log id="treeStat" spec="TreeStatLogger" tree="@simulatedTree"/>
+      <log id="SACount"
+				spec="SATreeStatsLogger"
+				tree="@simulatedTree"
+				finalSampleOffset="@finalSampleOffset"
+				parameterization="@parameterization" />
+				
+    </logger>
+
+    <logger spec="Logger" mode="tree" logEvery="1" fileName="$(filebase).trees">
+      <log idref="untypedTree"/>
+    </logger>
+  </run>
+</beast>
