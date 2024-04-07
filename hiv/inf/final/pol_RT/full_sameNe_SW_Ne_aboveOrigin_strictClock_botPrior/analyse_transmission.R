@@ -9,16 +9,17 @@ library(pROC)
 
 inference_file <- ""
 output_file <- ""
+tnt_dir <- "~/Documents/Source/TnT-material/hiv/inf/final/pol_RT/full_sameNe_SW_Ne_aboveOrigin_strictClock_botPrior/combined/"
+setwd(tnt_dir)
 
 ### Tools are part of TnT repository: https://github.com/jugne/TnT/
 #https://github.com/jugne/TnT/blob/master/src/tnt/tntAnnotator/TransmissionAnalyser.java
-transmission_analyser_path <- "~/Documents/Source/TnT/out/artifacts/TransmissionAnalyser_jar/TransmissionAnalyser.jar"
+transmission_analyser_path <- "../TransmissionAnalyser.jar"
 # https://github.com/jugne/TnT/blob/master/scripts/summarize_transmission.py
-summariser_path<- "~/Documents/Source/TnT/scripts/summarize_transmission.py"
+summariser_path<- "../summarize_transmission.py"
 
-tnt_dir <- "~/Documents/Source/TnT-material/hiv/inf/final/pol_RT/full_sameNe_SW_Ne_aboveOrigin_strictClock_botPrior/combined/"
 
-setwd(tnt_dir)
+
 cmd<-paste0("python3 ", summariser_path, " -i env_pol_saConstrained_s1_sameNe_combined.transmission.log -o ./")
 system(cmd)
 
