@@ -1,0 +1,2177 @@
+<beast version="2.4" beautitemplate='StarBeast2'
+	beautistatus='noAutoSetClockRate'
+	namespace="beast.core
+              :beast.evolution.alignment
+              :beast.evolution.tree.coalescent
+              :beast.core.util
+              :beast.evolution.nuc
+              :beast.evolution.tree
+              :beast.evolution.operators
+              :beast.evolution.sitemodel
+              :beast.evolution.substitutionmodel
+              :beast.evolution.likelihood
+              :beast.core.parameter
+              :beast.util
+              :feast.fileio
+              :starbeast2
+              :starbeast2.utils
+              :tnt.distribution
+              :tnt.operators
+              :tnt.util
+              :tnt.transmissionTree
+              :pitchfork.util
+              :tnt.simulator
+              :bdmmprime.distribution
+              :bdmmprime.parameterization
+              :bdmmprime.mapping">
+
+	<data dataType="nucleotide" id="env" name="alignment">
+		<sequence id="seq_L_06_env_cl06" taxon="L_06_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl07" taxon="L_06_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl09" taxon="L_06_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl01" taxon="L_06_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl11" taxon="L_06_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl13" taxon="L_06_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_L_06_env_cl14" taxon="L_06_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl02" taxon="E_06_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl04" taxon="E_06_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl05" taxon="E_06_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl06" taxon="E_06_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl07" taxon="E_06_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl09" taxon="E_06_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl10" taxon="E_06_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl11" taxon="E_06_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl12" taxon="E_06_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl13" taxon="E_06_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_06_env_cl14" taxon="E_06_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl01" taxon="A_06_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl02" taxon="A_06_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl03" taxon="A_06_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl04" taxon="A_06_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl07" taxon="A_06_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl08" taxon="A_06_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl09" taxon="A_06_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_06_env_cl10" taxon="A_06_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl03" taxon="A_05_2_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl04" taxon="A_05_2_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl06" taxon="A_05_2_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl07" taxon="A_05_2_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl08" taxon="A_05_2_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl09" taxon="A_05_2_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_2_env_cl10" taxon="A_05_2_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl01" taxon="A_05_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl02" taxon="A_05_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl03" taxon="A_05_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl04" taxon="A_05_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl06" taxon="A_05_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl07" taxon="A_05_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl08" taxon="A_05_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_05_env_cl10" taxon="A_05_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_05_env_cl08" taxon="F_05_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl01" taxon="E_05_2_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl04" taxon="E_05_2_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl05" taxon="E_05_2_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl06" taxon="E_05_2_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl13" taxon="E_05_2_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl14" taxon="E_05_2_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_2_env_cl15" taxon="E_05_2_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl01" taxon="E_05_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl02" taxon="E_05_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl03" taxon="E_05_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl04" taxon="E_05_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl05" taxon="E_05_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl06" taxon="E_05_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl07" taxon="E_05_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl08" taxon="E_05_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl09" taxon="E_05_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl10" taxon="E_05_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl12" taxon="E_05_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl13" taxon="E_05_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl14" taxon="E_05_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_05_env_cl15" taxon="E_05_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_K_04_env_cl09" taxon="K_04_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_K_04_env_cl10" taxon="K_04_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_K_04_env_cl11" taxon="K_04_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl01" taxon="C_03_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl03" taxon="C_03_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl04" taxon="C_03_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl05" taxon="C_03_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl08" taxon="C_03_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl09" taxon="C_03_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl10" taxon="C_03_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl12" taxon="C_03_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl14" taxon="C_03_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_03_env_cl16" taxon="C_03_env_cl16"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl01" taxon="D_03_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl02" taxon="D_03_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl03" taxon="D_03_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl05" taxon="D_03_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl06" taxon="D_03_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl07" taxon="D_03_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl08" taxon="D_03_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl09" taxon="D_03_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl10" taxon="D_03_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl12" taxon="D_03_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl13" taxon="D_03_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl14" taxon="D_03_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_03_env_cl15" taxon="D_03_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl15" taxon="F_02_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl16.2" taxon="F_02_env_cl16.2"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl17" taxon="F_02_env_cl17"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl18" taxon="F_02_env_cl18"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl19.2" taxon="F_02_env_cl19.2"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl19.3" taxon="F_02_env_cl19.3"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl21" taxon="F_02_env_cl21"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl22" taxon="F_02_env_cl22"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl24" taxon="F_02_env_cl24"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl25" taxon="F_02_env_cl25"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl26" taxon="F_02_env_cl26"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl27" taxon="F_02_env_cl27"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_F_02_env_cl28" taxon="F_02_env_cl28"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl01" taxon="G_02_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl03" taxon="G_02_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl07" taxon="G_02_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl10" taxon="G_02_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl77" taxon="G_02_env_cl77"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl78" taxon="G_02_env_cl78"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl79" taxon="G_02_env_cl79"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl80" taxon="G_02_env_cl80"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl81" taxon="G_02_env_cl81"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_G_02_env_cl85" taxon="G_02_env_cl85"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl01" taxon="C_02_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl02" taxon="C_02_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl03" taxon="C_02_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl04" taxon="C_02_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl05" taxon="C_02_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl07" taxon="C_02_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl08" taxon="C_02_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl09" taxon="C_02_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl12" taxon="C_02_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl13" taxon="C_02_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl14" taxon="C_02_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_02_env_cl15" taxon="C_02_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl04" taxon="D_01_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl06" taxon="D_01_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl07" taxon="D_01_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl07.2" taxon="D_01_env_cl07.2"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl09.2" taxon="D_01_env_cl09.2"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl11" taxon="D_01_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_01_env_cl11.2" taxon="D_01_env_cl11.2"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl31" taxon="E_01_env_cl31"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl33" taxon="E_01_env_cl33"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl34" taxon="E_01_env_cl34"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl36" taxon="E_01_env_cl36"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl38" taxon="E_01_env_cl38"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl39" taxon="E_01_env_cl39"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl40" taxon="E_01_env_cl40"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl43" taxon="E_01_env_cl43"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_E_01_env_cl44" taxon="E_01_env_cl44"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl31" taxon="A_00_env_cl31"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl32" taxon="A_00_env_cl32"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl33" taxon="A_00_env_cl33"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl35" taxon="A_00_env_cl35"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl37" taxon="A_00_env_cl37"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl40" taxon="A_00_env_cl40"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl41" taxon="A_00_env_cl41"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl43" taxon="A_00_env_cl43"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_00_env_cl44" taxon="A_00_env_cl44"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_I_99_env_cl29" taxon="I_99_env_cl29"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_I_99_env_cl31" taxon="I_99_env_cl31"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_I_99_env_cl33" taxon="I_99_env_cl33"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl02" taxon="D_99_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl03" taxon="D_99_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl04" taxon="D_99_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl05" taxon="D_99_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl06" taxon="D_99_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl07" taxon="D_99_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl08" taxon="D_99_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl09" taxon="D_99_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl10" taxon="D_99_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl12" taxon="D_99_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_D_99_env_cl14" taxon="D_99_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl01" taxon="H_98_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl02" taxon="H_98_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl03" taxon="H_98_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl04" taxon="H_98_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl05" taxon="H_98_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl06" taxon="H_98_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl07" taxon="H_98_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl08" taxon="H_98_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl10" taxon="H_98_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl11" taxon="H_98_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_98_env_cl13" taxon="H_98_env_cl13"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl47" taxon="B_96_env_cl47"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl48" taxon="B_96_env_cl48"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl51" taxon="B_96_env_cl51"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl52" taxon="B_96_env_cl52"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl54" taxon="B_96_env_cl54"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl55" taxon="B_96_env_cl55"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl56" taxon="B_96_env_cl56"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl59" taxon="B_96_env_cl59"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_96_env_cl60" taxon="B_96_env_cl60"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl02" taxon="H_96_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl05" taxon="H_96_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl08" taxon="H_96_env_cl08"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl12" taxon="H_96_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl14" taxon="H_96_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_H_96_env_cl15" taxon="H_96_env_cl15"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_96_env_cl7" taxon="A_96_env_cl7"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_A_96_env_cl9" taxon="A_96_env_cl9"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl01" taxon="C_94_env_cl01"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl02" taxon="C_94_env_cl02"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl03" taxon="C_94_env_cl03"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl04" taxon="C_94_env_cl04"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl05" taxon="C_94_env_cl05"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl06" taxon="C_94_env_cl06"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl07" taxon="C_94_env_cl07"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl09" taxon="C_94_env_cl09"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl10" taxon="C_94_env_cl10"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl11" taxon="C_94_env_cl11"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl12" taxon="C_94_env_cl12"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl14" taxon="C_94_env_cl14"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl65" taxon="C_94_env_cl65"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl67" taxon="C_94_env_cl67"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_C_94_env_cl68" taxon="C_94_env_cl68"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl16" taxon="B_90_env_cl16"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl18" taxon="B_90_env_cl18"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl22" taxon="B_90_env_cl22"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl23" taxon="B_90_env_cl23"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl25" taxon="B_90_env_cl25"
+			totalcount="4"
+			value="-" />
+		<sequence id="seq_B_90_env_cl26" taxon="B_90_env_cl26"
+			totalcount="4"
+			value="-" />
+	</data>
+	<data dataType="nucleotide" id="pol" name="alignment">
+        <sequence id="seq_L_06_pol_cl01" taxon="L_06_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl02" taxon="L_06_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl04" taxon="L_06_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl05" taxon="L_06_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl07" taxon="L_06_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl08" taxon="L_06_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl09" taxon="L_06_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl10" taxon="L_06_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl11" taxon="L_06_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl13" taxon="L_06_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl14" taxon="L_06_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_L_06_pol_cl15" taxon="L_06_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl01" taxon="E_06_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl02" taxon="E_06_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl03" taxon="E_06_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl04" taxon="E_06_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl05" taxon="E_06_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl06" taxon="E_06_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl08" taxon="E_06_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl09" taxon="E_06_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl10" taxon="E_06_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl11" taxon="E_06_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl12" taxon="E_06_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl13" taxon="E_06_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl14" taxon="E_06_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_E_06_pol_cl15" taxon="E_06_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl01" taxon="A_05_2_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl02" taxon="A_05_2_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl03" taxon="A_05_2_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl04" taxon="A_05_2_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl05" taxon="A_05_2_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl06" taxon="A_05_2_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl07" taxon="A_05_2_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_2_pol_cl10" taxon="A_05_2_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl01" taxon="A_05_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl02" taxon="A_05_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl03" taxon="A_05_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl05" taxon="A_05_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl07" taxon="A_05_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl09" taxon="A_05_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl10" taxon="A_05_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl11" taxon="A_05_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl12" taxon="A_05_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_A_05_pol_cl13" taxon="A_05_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl02" taxon="F_05_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl03" taxon="F_05_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl04" taxon="F_05_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl05" taxon="F_05_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl06" taxon="F_05_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl09" taxon="F_05_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl10" taxon="F_05_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl13" taxon="F_05_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_F_05_pol_cl15" taxon="F_05_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl01" taxon="E_05_2_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl02" taxon="E_05_2_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl03" taxon="E_05_2_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl04" taxon="E_05_2_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl05" taxon="E_05_2_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl06" taxon="E_05_2_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl07" taxon="E_05_2_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl08" taxon="E_05_2_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl09" taxon="E_05_2_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl10" taxon="E_05_2_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl11" taxon="E_05_2_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl13" taxon="E_05_2_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_2_pol_cl14" taxon="E_05_2_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl01" taxon="E_05_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl04" taxon="E_05_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl05" taxon="E_05_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl06" taxon="E_05_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl07" taxon="E_05_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl08" taxon="E_05_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl09" taxon="E_05_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl12" taxon="E_05_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl13" taxon="E_05_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_E_05_pol_cl14" taxon="E_05_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl02" taxon="K_04_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl03" taxon="K_04_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl04" taxon="K_04_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl06" taxon="K_04_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl07" taxon="K_04_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl08" taxon="K_04_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl09" taxon="K_04_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl10" taxon="K_04_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl11" taxon="K_04_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl12" taxon="K_04_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl13" taxon="K_04_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl14" taxon="K_04_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_K_04_pol_cl15" taxon="K_04_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl02" taxon="C_03_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl04" taxon="C_03_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl06" taxon="C_03_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl07" taxon="C_03_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl09" taxon="C_03_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl10" taxon="C_03_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl11" taxon="C_03_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl12" taxon="C_03_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl13" taxon="C_03_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_C_03_pol_cl14" taxon="C_03_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl01" taxon="D_03_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl02" taxon="D_03_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl03" taxon="D_03_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl04" taxon="D_03_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl05" taxon="D_03_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl06" taxon="D_03_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl07" taxon="D_03_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl08" taxon="D_03_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl09" taxon="D_03_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl10" taxon="D_03_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl12" taxon="D_03_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl14" taxon="D_03_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_D_03_pol_cl15" taxon="D_03_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl15" taxon="F_02_pol_cl15" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl16" taxon="F_02_pol_cl16" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl17" taxon="F_02_pol_cl17" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl18" taxon="F_02_pol_cl18" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl19" taxon="F_02_pol_cl19" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl20" taxon="F_02_pol_cl20" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl21" taxon="F_02_pol_cl21" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl23" taxon="F_02_pol_cl23" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl25" taxon="F_02_pol_cl25" totalcount="4" value="-"/>
+        <sequence id="seq_F_02_pol_cl30" taxon="F_02_pol_cl30" totalcount="4" value="-"/>
+        <sequence id="seq_G_02_pol_cl22" taxon="G_02_pol_cl22" totalcount="4" value="-"/>
+        <sequence id="seq_G_02_pol_cl25" taxon="G_02_pol_cl25" totalcount="4" value="-"/>
+        <sequence id="seq_G_02_pol_cl29" taxon="G_02_pol_cl29" totalcount="4" value="-"/>
+        <sequence id="seq_G_02_pol_cl36" taxon="G_02_pol_cl36" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl17" taxon="C_02_pol_cl17" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl18" taxon="C_02_pol_cl18" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl20" taxon="C_02_pol_cl20" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl21" taxon="C_02_pol_cl21" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl24" taxon="C_02_pol_cl24" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl25" taxon="C_02_pol_cl25" totalcount="4" value="-"/>
+        <sequence id="seq_C_02_pol_cl26" taxon="C_02_pol_cl26" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl01" taxon="D_01_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl02" taxon="D_01_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl05" taxon="D_01_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl06" taxon="D_01_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl08" taxon="D_01_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl09" taxon="D_01_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl11" taxon="D_01_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl12" taxon="D_01_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_D_01_pol_cl14" taxon="D_01_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl03" taxon="E_01_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl09" taxon="E_01_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl16" taxon="E_01_pol_cl16" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl19" taxon="E_01_pol_cl19" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl31" taxon="E_01_pol_cl31" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl32" taxon="E_01_pol_cl32" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl34" taxon="E_01_pol_cl34" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl36" taxon="E_01_pol_cl36" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl41" taxon="E_01_pol_cl41" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl44" taxon="E_01_pol_cl44" totalcount="4" value="-"/>
+        <sequence id="seq_E_01_pol_cl45" taxon="E_01_pol_cl45" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl01" taxon="A_00_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl03" taxon="A_00_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl05" taxon="A_00_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl08" taxon="A_00_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl09" taxon="A_00_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl10" taxon="A_00_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl11" taxon="A_00_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl12" taxon="A_00_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl13" taxon="A_00_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_A_00_pol_cl16" taxon="A_00_pol_cl16" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl01" taxon="I_99_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl03" taxon="I_99_pol_cl03" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl04" taxon="I_99_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl05" taxon="I_99_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl07" taxon="I_99_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl08" taxon="I_99_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl09" taxon="I_99_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl12" taxon="I_99_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl13" taxon="I_99_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_I_99_pol_cl14" taxon="I_99_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl01" taxon="D_99_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl02" taxon="D_99_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl04" taxon="D_99_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl05" taxon="D_99_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl06" taxon="D_99_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl07" taxon="D_99_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl08" taxon="D_99_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl10" taxon="D_99_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_D_99_pol_cl12" taxon="D_99_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl01" taxon="H_98_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl04" taxon="H_98_pol_cl04" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl07" taxon="H_98_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl14" taxon="H_98_pol_cl14" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl32" taxon="H_98_pol_cl32" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl33" taxon="H_98_pol_cl33" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl34" taxon="H_98_pol_cl34" totalcount="4" value="-"/>
+        <sequence id="seq_H_98_pol_cl38" taxon="H_98_pol_cl38" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl41" taxon="B_96_pol_cl41" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl42" taxon="B_96_pol_cl42" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl43" taxon="B_96_pol_cl43" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl44" taxon="B_96_pol_cl44" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl46" taxon="B_96_pol_cl46" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl47" taxon="B_96_pol_cl47" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl49" taxon="B_96_pol_cl49" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl50" taxon="B_96_pol_cl50" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl51" taxon="B_96_pol_cl51" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl55" taxon="B_96_pol_cl55" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl57" taxon="B_96_pol_cl57" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl58" taxon="B_96_pol_cl58" totalcount="4" value="-"/>
+        <sequence id="seq_B_96_pol_cl59" taxon="B_96_pol_cl59" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl01" taxon="H_96_pol_cl01" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl02" taxon="H_96_pol_cl02" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl05" taxon="H_96_pol_cl05" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl06" taxon="H_96_pol_cl06" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl07" taxon="H_96_pol_cl07" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl08" taxon="H_96_pol_cl08" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl09" taxon="H_96_pol_cl09" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl10" taxon="H_96_pol_cl10" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl11" taxon="H_96_pol_cl11" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl12" taxon="H_96_pol_cl12" totalcount="4" value="-"/>
+        <sequence id="seq_H_96_pol_cl13" taxon="H_96_pol_cl13" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl31" taxon="A_96_pol_cl31" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl32" taxon="A_96_pol_cl32" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl33" taxon="A_96_pol_cl33" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl34" taxon="A_96_pol_cl34" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl36" taxon="A_96_pol_cl36" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl38" taxon="A_96_pol_cl38" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl39" taxon="A_96_pol_cl39" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl40" taxon="A_96_pol_cl40" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl42" taxon="A_96_pol_cl42" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl44" taxon="A_96_pol_cl44" totalcount="4" value="-"/>
+        <sequence id="seq_A_96_pol_cl45" taxon="A_96_pol_cl45" totalcount="4" value="-"/>
+        <sequence id="seq_C_94_pol_cl21" taxon="C_94_pol_cl21" totalcount="4" value="-"/>
+        <sequence id="seq_C_94_pol_cl24" taxon="C_94_pol_cl24" totalcount="4" value="-"/>
+        <sequence id="seq_C_94_pol_cl29" taxon="C_94_pol_cl29" totalcount="4" value="-"/>
+        <sequence id="seq_C_94_pol_cl30" taxon="C_94_pol_cl30" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl28" taxon="B_90_pol_cl28" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl32" taxon="B_90_pol_cl32" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl36" taxon="B_90_pol_cl36" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl39" taxon="B_90_pol_cl39" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl50" taxon="B_90_pol_cl50" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl51" taxon="B_90_pol_cl51" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl57" taxon="B_90_pol_cl57" totalcount="4" value="-"/>
+        <sequence id="seq_B_90_pol_cl59" taxon="B_90_pol_cl59" totalcount="4" value="-"/>
+
+    </data>
+
+
+
+	<trait id='tipDates' spec='beast.evolution.tree.TraitSet'
+		traitname='date-forward' units='year'
+		value='L_06=2006.22465753425,
+E_06=2006.14246575342,
+A_06=2006.00547945205,
+A_05_2=2005.84931506849,
+A_05=2005.79178082192,
+F_05=2005.71506849315,
+E_05_2=2005.56712328767,
+E_05=2005.06849315068,
+K_04=2004.74590163934,
+C_03=2003.95342465753,
+D_03=2003.22465753425,
+F_02=2002.2904109589,
+G_02=2002.28767123288,
+C_02=2002.05479452055,
+D_01=2001.24931506849,
+E_01=2001.1397260274,
+A_00=2000.73224043716,
+I_99=1999.76164383562,
+D_99=1999.3698630137,
+H_98=1998.39452054795,
+B_96=1996.6174863388,
+H_96=1996.53551912568,
+A_96=1996.50273224044,
+C_94=1994.02465753425,
+B_90=1990.34520547945'>
+		<taxa id="taxonsuperset" spec="TaxonSet">
+			<taxon id="L_06" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="L_06_env_cl06" spec="Taxon" />
+				<taxon id="L_06_env_cl07" spec="Taxon" />
+				<taxon id="L_06_env_cl09" spec="Taxon" />
+				<taxon id="L_06_env_cl01" spec="Taxon" />
+				<taxon id="L_06_env_cl11" spec="Taxon" />
+				<taxon id="L_06_env_cl13" spec="Taxon" />
+				<taxon id="L_06_env_cl14" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="L_06_pol_cl01" spec="Taxon" />
+				<taxon id="L_06_pol_cl02" spec="Taxon" />
+				<taxon id="L_06_pol_cl04" spec="Taxon" />
+				<taxon id="L_06_pol_cl05" spec="Taxon" />
+				<taxon id="L_06_pol_cl07" spec="Taxon" />
+				<taxon id="L_06_pol_cl08" spec="Taxon" />
+				<taxon id="L_06_pol_cl09" spec="Taxon" />
+				<taxon id="L_06_pol_cl10" spec="Taxon" />
+				<taxon id="L_06_pol_cl11" spec="Taxon" />
+				<taxon id="L_06_pol_cl13" spec="Taxon" />
+				<taxon id="L_06_pol_cl14" spec="Taxon" />
+				<taxon id="L_06_pol_cl15" spec="Taxon" />
+			</taxon>
+			<taxon id="E_06" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="E_06_env_cl02" spec="Taxon" />
+				<taxon id="E_06_env_cl04" spec="Taxon" />
+				<taxon id="E_06_env_cl05" spec="Taxon" />
+				<taxon id="E_06_env_cl06" spec="Taxon" />
+				<taxon id="E_06_env_cl07" spec="Taxon" />
+				<taxon id="E_06_env_cl09" spec="Taxon" />
+				<taxon id="E_06_env_cl10" spec="Taxon" />
+				<taxon id="E_06_env_cl11" spec="Taxon" />
+				<taxon id="E_06_env_cl12" spec="Taxon" />
+				<taxon id="E_06_env_cl13" spec="Taxon" />
+				<taxon id="E_06_env_cl14" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="E_06_pol_cl01" spec="Taxon" />
+				<taxon id="E_06_pol_cl02" spec="Taxon" />
+				<taxon id="E_06_pol_cl03" spec="Taxon" />
+				<taxon id="E_06_pol_cl04" spec="Taxon" />
+				<taxon id="E_06_pol_cl05" spec="Taxon" />
+				<taxon id="E_06_pol_cl06" spec="Taxon" />
+				<taxon id="E_06_pol_cl08" spec="Taxon" />
+				<taxon id="E_06_pol_cl09" spec="Taxon" />
+				<taxon id="E_06_pol_cl10" spec="Taxon" />
+				<taxon id="E_06_pol_cl11" spec="Taxon" />
+				<taxon id="E_06_pol_cl12" spec="Taxon" />
+				<taxon id="E_06_pol_cl13" spec="Taxon" />
+				<taxon id="E_06_pol_cl14" spec="Taxon" />
+				<taxon id="E_06_pol_cl15" spec="Taxon" />
+			</taxon>
+			<taxon id="A_06" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="A_06_env_cl01" spec="Taxon" />
+				<taxon id="A_06_env_cl02" spec="Taxon" />
+				<taxon id="A_06_env_cl03" spec="Taxon" />
+				<taxon id="A_06_env_cl04" spec="Taxon" />
+				<taxon id="A_06_env_cl07" spec="Taxon" />
+				<taxon id="A_06_env_cl08" spec="Taxon" />
+				<taxon id="A_06_env_cl09" spec="Taxon" />
+				<taxon id="A_06_env_cl10" spec="Taxon" />
+			</taxon>
+			<taxon id="A_05_2" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="A_05_2_env_cl03" spec="Taxon" />
+				<taxon id="A_05_2_env_cl04" spec="Taxon" />
+				<taxon id="A_05_2_env_cl06" spec="Taxon" />
+				<taxon id="A_05_2_env_cl07" spec="Taxon" />
+				<taxon id="A_05_2_env_cl08" spec="Taxon" />
+				<taxon id="A_05_2_env_cl09" spec="Taxon" />
+				<taxon id="A_05_2_env_cl10" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="A_05_2_pol_cl01" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl02" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl03" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl04" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl05" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl06" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl07" spec="Taxon" />
+				<taxon id="A_05_2_pol_cl10" spec="Taxon" />
+			</taxon>
+			<taxon id="A_05" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="A_05_env_cl01" spec="Taxon" />
+				<taxon id="A_05_env_cl02" spec="Taxon" />
+				<taxon id="A_05_env_cl03" spec="Taxon" />
+				<taxon id="A_05_env_cl04" spec="Taxon" />
+				<taxon id="A_05_env_cl06" spec="Taxon" />
+				<taxon id="A_05_env_cl07" spec="Taxon" />
+				<taxon id="A_05_env_cl08" spec="Taxon" />
+				<taxon id="A_05_env_cl10" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="A_05_pol_cl01" spec="Taxon" />
+				<taxon id="A_05_pol_cl02" spec="Taxon" />
+				<taxon id="A_05_pol_cl03" spec="Taxon" />
+				<taxon id="A_05_pol_cl05" spec="Taxon" />
+				<taxon id="A_05_pol_cl07" spec="Taxon" />
+				<taxon id="A_05_pol_cl09" spec="Taxon" />
+				<taxon id="A_05_pol_cl10" spec="Taxon" />
+				<taxon id="A_05_pol_cl11" spec="Taxon" />
+				<taxon id="A_05_pol_cl12" spec="Taxon" />
+				<taxon id="A_05_pol_cl13" spec="Taxon" />
+			</taxon>
+			<taxon id="F_05" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="F_05_env_cl08" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="F_05_pol_cl02" spec="Taxon" />
+				<taxon id="F_05_pol_cl03" spec="Taxon" />
+				<taxon id="F_05_pol_cl04" spec="Taxon" />
+				<taxon id="F_05_pol_cl05" spec="Taxon" />
+				<taxon id="F_05_pol_cl06" spec="Taxon" />
+				<taxon id="F_05_pol_cl09" spec="Taxon" />
+				<taxon id="F_05_pol_cl10" spec="Taxon" />
+				<taxon id="F_05_pol_cl13" spec="Taxon" />
+				<taxon id="F_05_pol_cl15" spec="Taxon" />
+			</taxon>
+			<taxon id="E_05_2" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="E_05_2_env_cl01" spec="Taxon" />
+				<taxon id="E_05_2_env_cl04" spec="Taxon" />
+				<taxon id="E_05_2_env_cl05" spec="Taxon" />
+				<taxon id="E_05_2_env_cl06" spec="Taxon" />
+				<taxon id="E_05_2_env_cl13" spec="Taxon" />
+				<taxon id="E_05_2_env_cl14" spec="Taxon" />
+				<taxon id="E_05_2_env_cl15" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="E_05_2_pol_cl01" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl02" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl03" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl04" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl05" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl06" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl07" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl08" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl09" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl10" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl11" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl13" spec="Taxon" />
+				<taxon id="E_05_2_pol_cl14" spec="Taxon" />
+			</taxon>
+			<taxon id="E_05" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="E_05_env_cl01" spec="Taxon" />
+				<taxon id="E_05_env_cl02" spec="Taxon" />
+				<taxon id="E_05_env_cl03" spec="Taxon" />
+				<taxon id="E_05_env_cl04" spec="Taxon" />
+				<taxon id="E_05_env_cl05" spec="Taxon" />
+				<taxon id="E_05_env_cl06" spec="Taxon" />
+				<taxon id="E_05_env_cl07" spec="Taxon" />
+				<taxon id="E_05_env_cl08" spec="Taxon" />
+				<taxon id="E_05_env_cl09" spec="Taxon" />
+				<taxon id="E_05_env_cl10" spec="Taxon" />
+				<taxon id="E_05_env_cl12" spec="Taxon" />
+				<taxon id="E_05_env_cl13" spec="Taxon" />
+				<taxon id="E_05_env_cl14" spec="Taxon" />
+				<taxon id="E_05_env_cl15" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="E_05_pol_cl01" spec="Taxon" />
+				<taxon id="E_05_pol_cl04" spec="Taxon" />
+				<taxon id="E_05_pol_cl05" spec="Taxon" />
+				<taxon id="E_05_pol_cl06" spec="Taxon" />
+				<taxon id="E_05_pol_cl07" spec="Taxon" />
+				<taxon id="E_05_pol_cl08" spec="Taxon" />
+				<taxon id="E_05_pol_cl09" spec="Taxon" />
+				<taxon id="E_05_pol_cl12" spec="Taxon" />
+				<taxon id="E_05_pol_cl13" spec="Taxon" />
+				<taxon id="E_05_pol_cl14" spec="Taxon" />
+			</taxon>
+			<taxon id="K_04" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="K_04_env_cl09" spec="Taxon" />
+				<taxon id="K_04_env_cl10" spec="Taxon" />
+				<taxon id="K_04_env_cl11" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="K_04_pol_cl02" spec="Taxon" />
+				<taxon id="K_04_pol_cl03" spec="Taxon" />
+				<taxon id="K_04_pol_cl04" spec="Taxon" />
+				<taxon id="K_04_pol_cl06" spec="Taxon" />
+				<taxon id="K_04_pol_cl07" spec="Taxon" />
+				<taxon id="K_04_pol_cl08" spec="Taxon" />
+				<taxon id="K_04_pol_cl09" spec="Taxon" />
+				<taxon id="K_04_pol_cl10" spec="Taxon" />
+				<taxon id="K_04_pol_cl11" spec="Taxon" />
+				<taxon id="K_04_pol_cl12" spec="Taxon" />
+				<taxon id="K_04_pol_cl13" spec="Taxon" />
+				<taxon id="K_04_pol_cl14" spec="Taxon" />
+				<taxon id="K_04_pol_cl15" spec="Taxon" />
+			</taxon>
+			<taxon id="C_03" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="C_03_env_cl01" spec="Taxon" />
+				<taxon id="C_03_env_cl03" spec="Taxon" />
+				<taxon id="C_03_env_cl04" spec="Taxon" />
+				<taxon id="C_03_env_cl05" spec="Taxon" />
+				<taxon id="C_03_env_cl08" spec="Taxon" />
+				<taxon id="C_03_env_cl09" spec="Taxon" />
+				<taxon id="C_03_env_cl10" spec="Taxon" />
+				<taxon id="C_03_env_cl12" spec="Taxon" />
+				<taxon id="C_03_env_cl14" spec="Taxon" />
+				<taxon id="C_03_env_cl16" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="C_03_pol_cl02" spec="Taxon" />
+				<taxon id="C_03_pol_cl04" spec="Taxon" />
+				<taxon id="C_03_pol_cl06" spec="Taxon" />
+				<taxon id="C_03_pol_cl07" spec="Taxon" />
+				<taxon id="C_03_pol_cl09" spec="Taxon" />
+				<taxon id="C_03_pol_cl10" spec="Taxon" />
+				<taxon id="C_03_pol_cl11" spec="Taxon" />
+				<taxon id="C_03_pol_cl12" spec="Taxon" />
+				<taxon id="C_03_pol_cl13" spec="Taxon" />
+				<taxon id="C_03_pol_cl14" spec="Taxon" />
+			</taxon>
+			<taxon id="D_03" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="D_03_env_cl01" spec="Taxon" />
+				<taxon id="D_03_env_cl02" spec="Taxon" />
+				<taxon id="D_03_env_cl03" spec="Taxon" />
+				<taxon id="D_03_env_cl05" spec="Taxon" />
+				<taxon id="D_03_env_cl06" spec="Taxon" />
+				<taxon id="D_03_env_cl07" spec="Taxon" />
+				<taxon id="D_03_env_cl08" spec="Taxon" />
+				<taxon id="D_03_env_cl09" spec="Taxon" />
+				<taxon id="D_03_env_cl10" spec="Taxon" />
+				<taxon id="D_03_env_cl12" spec="Taxon" />
+				<taxon id="D_03_env_cl13" spec="Taxon" />
+				<taxon id="D_03_env_cl14" spec="Taxon" />
+				<taxon id="D_03_env_cl15" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="D_03_pol_cl01" spec="Taxon" />
+				<taxon id="D_03_pol_cl02" spec="Taxon" />
+				<taxon id="D_03_pol_cl03" spec="Taxon" />
+				<taxon id="D_03_pol_cl04" spec="Taxon" />
+				<taxon id="D_03_pol_cl05" spec="Taxon" />
+				<taxon id="D_03_pol_cl06" spec="Taxon" />
+				<taxon id="D_03_pol_cl07" spec="Taxon" />
+				<taxon id="D_03_pol_cl08" spec="Taxon" />
+				<taxon id="D_03_pol_cl09" spec="Taxon" />
+				<taxon id="D_03_pol_cl10" spec="Taxon" />
+				<taxon id="D_03_pol_cl12" spec="Taxon" />
+				<taxon id="D_03_pol_cl14" spec="Taxon" />
+				<taxon id="D_03_pol_cl15" spec="Taxon" />
+			</taxon>
+			<taxon id="F_02" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="F_02_env_cl15" spec="Taxon" />
+				<taxon id="F_02_env_cl16.2" spec="Taxon" />
+				<taxon id="F_02_env_cl17" spec="Taxon" />
+				<taxon id="F_02_env_cl18" spec="Taxon" />
+				<taxon id="F_02_env_cl19.2" spec="Taxon" />
+				<taxon id="F_02_env_cl19.3" spec="Taxon" />
+				<taxon id="F_02_env_cl21" spec="Taxon" />
+				<taxon id="F_02_env_cl22" spec="Taxon" />
+				<taxon id="F_02_env_cl24" spec="Taxon" />
+				<taxon id="F_02_env_cl25" spec="Taxon" />
+				<taxon id="F_02_env_cl26" spec="Taxon" />
+				<taxon id="F_02_env_cl27" spec="Taxon" />
+				<taxon id="F_02_env_cl28" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="F_02_pol_cl15" spec="Taxon" />
+				<taxon id="F_02_pol_cl16" spec="Taxon" />
+				<taxon id="F_02_pol_cl17" spec="Taxon" />
+				<taxon id="F_02_pol_cl18" spec="Taxon" />
+				<taxon id="F_02_pol_cl19" spec="Taxon" />
+				<taxon id="F_02_pol_cl20" spec="Taxon" />
+				<taxon id="F_02_pol_cl21" spec="Taxon" />
+				<taxon id="F_02_pol_cl23" spec="Taxon" />
+				<taxon id="F_02_pol_cl25" spec="Taxon" />
+				<taxon id="F_02_pol_cl30" spec="Taxon" />
+			</taxon>
+			<taxon id="G_02" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="G_02_env_cl01" spec="Taxon" />
+				<taxon id="G_02_env_cl03" spec="Taxon" />
+				<taxon id="G_02_env_cl07" spec="Taxon" />
+				<taxon id="G_02_env_cl10" spec="Taxon" />
+				<taxon id="G_02_env_cl77" spec="Taxon" />
+				<taxon id="G_02_env_cl78" spec="Taxon" />
+				<taxon id="G_02_env_cl79" spec="Taxon" />
+				<taxon id="G_02_env_cl80" spec="Taxon" />
+				<taxon id="G_02_env_cl81" spec="Taxon" />
+				<taxon id="G_02_env_cl85" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="G_02_pol_cl22" spec="Taxon" />
+				<taxon id="G_02_pol_cl25" spec="Taxon" />
+				<taxon id="G_02_pol_cl29" spec="Taxon" />
+				<taxon id="G_02_pol_cl36" spec="Taxon" />
+			</taxon>
+			<taxon id="C_02" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="C_02_env_cl01" spec="Taxon" />
+				<taxon id="C_02_env_cl02" spec="Taxon" />
+				<taxon id="C_02_env_cl03" spec="Taxon" />
+				<taxon id="C_02_env_cl04" spec="Taxon" />
+				<taxon id="C_02_env_cl05" spec="Taxon" />
+				<taxon id="C_02_env_cl07" spec="Taxon" />
+				<taxon id="C_02_env_cl08" spec="Taxon" />
+				<taxon id="C_02_env_cl09" spec="Taxon" />
+				<taxon id="C_02_env_cl12" spec="Taxon" />
+				<taxon id="C_02_env_cl13" spec="Taxon" />
+				<taxon id="C_02_env_cl14" spec="Taxon" />
+				<taxon id="C_02_env_cl15" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="C_02_pol_cl17" spec="Taxon" />
+				<taxon id="C_02_pol_cl18" spec="Taxon" />
+				<taxon id="C_02_pol_cl20" spec="Taxon" />
+				<taxon id="C_02_pol_cl21" spec="Taxon" />
+				<taxon id="C_02_pol_cl24" spec="Taxon" />
+				<taxon id="C_02_pol_cl25" spec="Taxon" />
+				<taxon id="C_02_pol_cl26" spec="Taxon" />
+			</taxon>
+			<taxon id="D_01" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="D_01_env_cl04" spec="Taxon" />
+				<taxon id="D_01_env_cl06" spec="Taxon" />
+				<taxon id="D_01_env_cl07" spec="Taxon" />
+				<taxon id="D_01_env_cl07.2" spec="Taxon" />
+				<taxon id="D_01_env_cl09.2" spec="Taxon" />
+				<taxon id="D_01_env_cl11" spec="Taxon" />
+				<taxon id="D_01_env_cl11.2" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="D_01_pol_cl01" spec="Taxon" />
+				<taxon id="D_01_pol_cl02" spec="Taxon" />
+				<taxon id="D_01_pol_cl05" spec="Taxon" />
+				<taxon id="D_01_pol_cl06" spec="Taxon" />
+				<taxon id="D_01_pol_cl08" spec="Taxon" />
+				<taxon id="D_01_pol_cl09" spec="Taxon" />
+				<taxon id="D_01_pol_cl11" spec="Taxon" />
+				<taxon id="D_01_pol_cl12" spec="Taxon" />
+				<taxon id="D_01_pol_cl14" spec="Taxon" />
+			</taxon>
+			<taxon id="E_01" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="E_01_env_cl31" spec="Taxon" />
+				<taxon id="E_01_env_cl33" spec="Taxon" />
+				<taxon id="E_01_env_cl34" spec="Taxon" />
+				<taxon id="E_01_env_cl36" spec="Taxon" />
+				<taxon id="E_01_env_cl38" spec="Taxon" />
+				<taxon id="E_01_env_cl39" spec="Taxon" />
+				<taxon id="E_01_env_cl40" spec="Taxon" />
+				<taxon id="E_01_env_cl43" spec="Taxon" />
+				<taxon id="E_01_env_cl44" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="E_01_pol_cl03" spec="Taxon" />
+				<taxon id="E_01_pol_cl09" spec="Taxon" />
+				<taxon id="E_01_pol_cl16" spec="Taxon" />
+				<taxon id="E_01_pol_cl19" spec="Taxon" />
+				<taxon id="E_01_pol_cl31" spec="Taxon" />
+				<taxon id="E_01_pol_cl32" spec="Taxon" />
+				<taxon id="E_01_pol_cl34" spec="Taxon" />
+				<taxon id="E_01_pol_cl36" spec="Taxon" />
+				<taxon id="E_01_pol_cl41" spec="Taxon" />
+				<taxon id="E_01_pol_cl44" spec="Taxon" />
+				<taxon id="E_01_pol_cl45" spec="Taxon" />
+			</taxon>
+			<taxon id="A_00" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="A_00_env_cl31" spec="Taxon" />
+				<taxon id="A_00_env_cl32" spec="Taxon" />
+				<taxon id="A_00_env_cl33" spec="Taxon" />
+				<taxon id="A_00_env_cl35" spec="Taxon" />
+				<taxon id="A_00_env_cl37" spec="Taxon" />
+				<taxon id="A_00_env_cl40" spec="Taxon" />
+				<taxon id="A_00_env_cl41" spec="Taxon" />
+				<taxon id="A_00_env_cl43" spec="Taxon" />
+				<taxon id="A_00_env_cl44" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="A_00_pol_cl01" spec="Taxon" />
+				<taxon id="A_00_pol_cl03" spec="Taxon" />
+				<taxon id="A_00_pol_cl05" spec="Taxon" />
+				<taxon id="A_00_pol_cl08" spec="Taxon" />
+				<taxon id="A_00_pol_cl09" spec="Taxon" />
+				<taxon id="A_00_pol_cl10" spec="Taxon" />
+				<taxon id="A_00_pol_cl11" spec="Taxon" />
+				<taxon id="A_00_pol_cl12" spec="Taxon" />
+				<taxon id="A_00_pol_cl13" spec="Taxon" />
+				<taxon id="A_00_pol_cl16" spec="Taxon" />
+			</taxon>
+			<taxon id="I_99" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="I_99_env_cl29" spec="Taxon" />
+				<taxon id="I_99_env_cl31" spec="Taxon" />
+				<taxon id="I_99_env_cl33" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="I_99_pol_cl01" spec="Taxon" />
+				<taxon id="I_99_pol_cl03" spec="Taxon" />
+				<taxon id="I_99_pol_cl04" spec="Taxon" />
+				<taxon id="I_99_pol_cl05" spec="Taxon" />
+				<taxon id="I_99_pol_cl07" spec="Taxon" />
+				<taxon id="I_99_pol_cl08" spec="Taxon" />
+				<taxon id="I_99_pol_cl09" spec="Taxon" />
+				<taxon id="I_99_pol_cl12" spec="Taxon" />
+				<taxon id="I_99_pol_cl13" spec="Taxon" />
+				<taxon id="I_99_pol_cl14" spec="Taxon" />
+			</taxon>
+			<taxon id="D_99" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="D_99_env_cl02" spec="Taxon" />
+				<taxon id="D_99_env_cl03" spec="Taxon" />
+				<taxon id="D_99_env_cl04" spec="Taxon" />
+				<taxon id="D_99_env_cl05" spec="Taxon" />
+				<taxon id="D_99_env_cl06" spec="Taxon" />
+				<taxon id="D_99_env_cl07" spec="Taxon" />
+				<taxon id="D_99_env_cl08" spec="Taxon" />
+				<taxon id="D_99_env_cl09" spec="Taxon" />
+				<taxon id="D_99_env_cl10" spec="Taxon" />
+				<taxon id="D_99_env_cl12" spec="Taxon" />
+				<taxon id="D_99_env_cl14" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="D_99_pol_cl01" spec="Taxon" />
+				<taxon id="D_99_pol_cl02" spec="Taxon" />
+				<taxon id="D_99_pol_cl04" spec="Taxon" />
+				<taxon id="D_99_pol_cl05" spec="Taxon" />
+				<taxon id="D_99_pol_cl06" spec="Taxon" />
+				<taxon id="D_99_pol_cl07" spec="Taxon" />
+				<taxon id="D_99_pol_cl08" spec="Taxon" />
+				<taxon id="D_99_pol_cl10" spec="Taxon" />
+				<taxon id="D_99_pol_cl12" spec="Taxon" />
+			</taxon>
+			<taxon id="H_98" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="H_98_env_cl01" spec="Taxon" />
+				<taxon id="H_98_env_cl02" spec="Taxon" />
+				<taxon id="H_98_env_cl03" spec="Taxon" />
+				<taxon id="H_98_env_cl04" spec="Taxon" />
+				<taxon id="H_98_env_cl05" spec="Taxon" />
+				<taxon id="H_98_env_cl06" spec="Taxon" />
+				<taxon id="H_98_env_cl07" spec="Taxon" />
+				<taxon id="H_98_env_cl08" spec="Taxon" />
+				<taxon id="H_98_env_cl10" spec="Taxon" />
+				<taxon id="H_98_env_cl11" spec="Taxon" />
+				<taxon id="H_98_env_cl13" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="H_98_pol_cl01" spec="Taxon" />
+				<taxon id="H_98_pol_cl04" spec="Taxon" />
+				<taxon id="H_98_pol_cl07" spec="Taxon" />
+				<taxon id="H_98_pol_cl14" spec="Taxon" />
+				<taxon id="H_98_pol_cl32" spec="Taxon" />
+				<taxon id="H_98_pol_cl33" spec="Taxon" />
+				<taxon id="H_98_pol_cl34" spec="Taxon" />
+				<taxon id="H_98_pol_cl38" spec="Taxon" />
+			</taxon>
+			<taxon id="B_96" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="B_96_env_cl47" spec="Taxon" />
+				<taxon id="B_96_env_cl48" spec="Taxon" />
+				<taxon id="B_96_env_cl51" spec="Taxon" />
+				<taxon id="B_96_env_cl52" spec="Taxon" />
+				<taxon id="B_96_env_cl54" spec="Taxon" />
+				<taxon id="B_96_env_cl55" spec="Taxon" />
+				<taxon id="B_96_env_cl56" spec="Taxon" />
+				<taxon id="B_96_env_cl59" spec="Taxon" />
+				<taxon id="B_96_env_cl60" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="B_96_pol_cl41" spec="Taxon" />
+				<taxon id="B_96_pol_cl42" spec="Taxon" />
+				<taxon id="B_96_pol_cl43" spec="Taxon" />
+				<taxon id="B_96_pol_cl44" spec="Taxon" />
+				<taxon id="B_96_pol_cl46" spec="Taxon" />
+				<taxon id="B_96_pol_cl47" spec="Taxon" />
+				<taxon id="B_96_pol_cl49" spec="Taxon" />
+				<taxon id="B_96_pol_cl50" spec="Taxon" />
+				<taxon id="B_96_pol_cl51" spec="Taxon" />
+				<taxon id="B_96_pol_cl55" spec="Taxon" />
+				<taxon id="B_96_pol_cl57" spec="Taxon" />
+				<taxon id="B_96_pol_cl58" spec="Taxon" />
+				<taxon id="B_96_pol_cl59" spec="Taxon" />
+			</taxon>
+			<taxon id="H_96" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="H_96_env_cl02" spec="Taxon" />
+				<taxon id="H_96_env_cl05" spec="Taxon" />
+				<taxon id="H_96_env_cl08" spec="Taxon" />
+				<taxon id="H_96_env_cl12" spec="Taxon" />
+				<taxon id="H_96_env_cl14" spec="Taxon" />
+				<taxon id="H_96_env_cl15" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="H_96_pol_cl01" spec="Taxon" />
+				<taxon id="H_96_pol_cl02" spec="Taxon" />
+				<taxon id="H_96_pol_cl05" spec="Taxon" />
+				<taxon id="H_96_pol_cl06" spec="Taxon" />
+				<taxon id="H_96_pol_cl07" spec="Taxon" />
+				<taxon id="H_96_pol_cl08" spec="Taxon" />
+				<taxon id="H_96_pol_cl09" spec="Taxon" />
+				<taxon id="H_96_pol_cl10" spec="Taxon" />
+				<taxon id="H_96_pol_cl11" spec="Taxon" />
+				<taxon id="H_96_pol_cl12" spec="Taxon" />
+				<taxon id="H_96_pol_cl13" spec="Taxon" />
+			</taxon>
+			<taxon id="A_96" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="A_96_env_cl7" spec="Taxon" />
+				<taxon id="A_96_env_cl9" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="A_96_pol_cl31" spec="Taxon" />
+				<taxon id="A_96_pol_cl32" spec="Taxon" />
+				<taxon id="A_96_pol_cl33" spec="Taxon" />
+				<taxon id="A_96_pol_cl34" spec="Taxon" />
+				<taxon id="A_96_pol_cl36" spec="Taxon" />
+				<taxon id="A_96_pol_cl38" spec="Taxon" />
+				<taxon id="A_96_pol_cl39" spec="Taxon" />
+				<taxon id="A_96_pol_cl40" spec="Taxon" />
+				<taxon id="A_96_pol_cl42" spec="Taxon" />
+				<taxon id="A_96_pol_cl44" spec="Taxon" />
+				<taxon id="A_96_pol_cl45" spec="Taxon" />
+			</taxon>
+			<taxon id="C_94" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="C_94_env_cl01" spec="Taxon" />
+				<taxon id="C_94_env_cl02" spec="Taxon" />
+				<taxon id="C_94_env_cl03" spec="Taxon" />
+				<taxon id="C_94_env_cl04" spec="Taxon" />
+				<taxon id="C_94_env_cl05" spec="Taxon" />
+				<taxon id="C_94_env_cl06" spec="Taxon" />
+				<taxon id="C_94_env_cl07" spec="Taxon" />
+				<taxon id="C_94_env_cl09" spec="Taxon" />
+				<taxon id="C_94_env_cl10" spec="Taxon" />
+				<taxon id="C_94_env_cl11" spec="Taxon" />
+				<taxon id="C_94_env_cl12" spec="Taxon" />
+				<taxon id="C_94_env_cl14" spec="Taxon" />
+				<taxon id="C_94_env_cl65" spec="Taxon" />
+				<taxon id="C_94_env_cl67" spec="Taxon" />
+				<taxon id="C_94_env_cl68" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="C_94_pol_cl21" spec="Taxon" />
+				<taxon id="C_94_pol_cl24" spec="Taxon" />
+				<taxon id="C_94_pol_cl29" spec="Taxon" />
+				<taxon id="C_94_pol_cl30" spec="Taxon" />
+			</taxon>
+			<taxon id="B_90" spec="TaxonSet">
+				<!-- env -->
+				<taxon id="B_90_env_cl16" spec="Taxon" />
+				<taxon id="B_90_env_cl18" spec="Taxon" />
+				<taxon id="B_90_env_cl22" spec="Taxon" />
+				<taxon id="B_90_env_cl23" spec="Taxon" />
+				<taxon id="B_90_env_cl25" spec="Taxon" />
+				<taxon id="B_90_env_cl26" spec="Taxon" />
+				<!-- pol -->
+				<taxon id="B_90_pol_cl28" spec="Taxon" />
+				<taxon id="B_90_pol_cl32" spec="Taxon" />
+				<taxon id="B_90_pol_cl36" spec="Taxon" />
+				<taxon id="B_90_pol_cl39" spec="Taxon" />
+				<taxon id="B_90_pol_cl50" spec="Taxon" />
+				<taxon id="B_90_pol_cl51" spec="Taxon" />
+				<taxon id="B_90_pol_cl57" spec="Taxon" />
+				<taxon id="B_90_pol_cl59" spec="Taxon" />
+			</taxon>
+		</taxa>
+	</trait>
+
+	<taxonSet spec="TaxonSet" id="taxonSet">
+		<taxon idref="L_06" />
+		<taxon idref="E_06" />
+		<taxon idref="A_06" />
+		<taxon idref="A_05_2" />
+		<taxon idref="A_05" />
+		<taxon idref="F_05" />
+		<taxon idref="E_05_2" />
+		<taxon idref="E_05" />
+		<taxon idref="K_04" />
+		<taxon idref="C_03" />
+		<taxon idref="D_03" />
+		<taxon idref="F_02" />
+		<taxon idref="G_02" />
+		<taxon idref="C_02" />
+		<taxon idref="D_01" />
+		<taxon idref="E_01" />
+		<taxon idref="A_00" />
+		<taxon idref="I_99" />
+		<taxon idref="D_99" />
+		<taxon idref="H_98" />
+		<taxon idref="B_96" />
+		<taxon idref="H_96" />
+		<taxon idref="A_96" />
+		<taxon idref="C_94" />
+		<taxon idref="B_90" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_B">
+		<taxon idref="B_90" />
+		<taxon idref="B_96" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_A">
+		<taxon idref="A_96" />
+		<taxon idref="A_00" />
+		<taxon idref="A_05" />
+		<taxon idref="A_05_2" />
+		<taxon idref="A_06" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_C">
+		<taxon idref="C_94" />
+		<taxon idref="C_02" />
+		<taxon idref="C_03" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_D">
+		<taxon idref="D_99" />
+		<taxon idref="D_01" />
+		<taxon idref="D_03" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_E">
+		<taxon idref="E_01" />
+		<taxon idref="E_05" />
+		<taxon idref="E_05_2" />
+		<taxon idref="E_06" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_F">
+		<taxon idref="F_02" />
+		<taxon idref="F_05" />
+	</taxonSet>
+
+	<taxonSet spec="TaxonSet" id="taxon_H">
+		<taxon idref="H_96" />
+		<taxon idref="H_98" />
+	</taxonSet>
+
+
+	<map name="Uniform">beast.math.distributions.Uniform</map>
+	<map name="Exponential">beast.math.distributions.Exponential</map>
+	<map name="LogNormal">beast.math.distributions.LogNormalDistributionModel
+	</map>
+	<map name="Normal">beast.math.distributions.Normal</map>
+	<map name="Beta">beast.math.distributions.Beta</map>
+	<map name="Gamma">beast.math.distributions.Gamma</map>
+	<map name="LaplaceDistribution">beast.math.distributions.LaplaceDistribution
+	</map>
+	<map name="prior">beast.math.distributions.Prior</map>
+	<map name="InverseGamma">beast.math.distributions.InverseGamma
+	</map>
+	<map name="OneOnX">beast.math.distributions.OneOnX</map>
+
+	<parameterization spec="EpiParameterization"
+		id="parameterization">
+		<processLength id="origin" spec="RealParameter" value="20" upper="30" lower="17"  />
+		<typeSet id="typeSet"
+			spec="bdmmprime.parameterization.TypeSet" value="0" />
+		<R0 spec="SkylineVectorParameter" typeSet="@typeSet">
+			<skylineValues id="R0" spec="RealParameter" value="4.0" />
+		</R0>
+		<becomeUninfectiousRate
+			spec="SkylineVectorParameter" typeSet="@typeSet">
+			<skylineValues id="becomeUninfectiousRate"
+				spec="RealParameter" value="0.4" />
+		</becomeUninfectiousRate>
+		<samplingProportion spec="SkylineVectorParameter"
+			typeSet="@typeSet" processLength="@origin" timesAreAges="true">
+			<skylineValues id="samplingProportion"
+				spec="RealParameter" value="1.0 0" />
+			<changeTimes spec="RealParameter" value="15.8794520548" />
+		</samplingProportion>
+		<removalProb spec="SkylineVectorParameter"
+			typeSet="@typeSet">
+			<skylineValues id="removalProbability"
+				spec="RealParameter" value="0.5" />
+		</removalProb>
+			
+		<rhoSampling spec="TimedParameter" typeSet="@typeSet" timesAreAges="true" processLength="@origin">
+			<times spec="RealParameter" value="0.0"/>
+			<values spec="RealParameter" id="rhoSampling" value="1.0"/>
+		</rhoSampling>
+	</parameterization>
+
+	<BirthDeathSkylineModel id="bdPrior"
+		spec="BirthDeathMigrationDistribution" tree="@transmissionTree"
+		parameterization="@parameterization" typeLabel="type"
+		conditionOnSurvival="false">
+		<frequencies spec="RealParameter" value="1.0" />
+	</BirthDeathSkylineModel>
+
+	<siteModel gammaCategoryCount="4" id="SiteModel.env"
+		spec="SiteModel">
+		<parameter dimension="1" id="mutationRate.env"
+			name="mutationRate" value="1.0" />
+		<parameter dimension="1" id="gammaShape.env" name="shape"
+			value="0.5" lower="0.0" upper="1000.0" />
+		<substModel id="gtr.env" rateAC="@rateAC.env" rateGT="@rateGT.env"
+			rateAT="@rateAT.env" rateCG="@rateCG.env" rateCT="@rateCT.env" spec="GTR">
+			<parameter dimension="1" id="rateAG.env" lower="0.0"
+				name="rateAG" value="1.0" />
+			<frequencies estimate="true" id="freqs.env"
+				spec="Frequencies">
+				<parameter name='frequencies' id='freqParameter.env'
+					value='0.25' dimension='4' lower="0." upper="1." />
+			</frequencies>
+		</substModel>
+	</siteModel>
+	
+	<siteModel gammaCategoryCount="4" id="SiteModel.pol"
+		spec="SiteModel">
+		<parameter dimension="1" id="mutationRate.pol"
+			name="mutationRate" value="1.0" />
+		<parameter dimension="1" id="gammaShape.pol" name="shape"
+			value="0.5" lower="0.0" upper="1000.0" />
+		<substModel id="gtr" rateAC="@rateAC.pol" rateGT="@rateGT.pol"
+			rateAT="@rateAT.pol" rateCG="@rateCG.pol" rateCT="@rateCT.pol" spec="GTR">
+			<parameter dimension="1" id="rateAG.pol" lower="0.0"
+				name="rateAG" value="1.0" />
+			<frequencies estimate="true" id="freqs.pol"
+				spec="Frequencies">
+				<parameter name='frequencies' id='freqParameter.pol'
+					value='0.25' dimension='4' lower="0." upper="1." />
+			</frequencies>
+		</substModel>
+	</siteModel>
+
+	<run id="mcmc" spec="MCMC" chainLength="200000000" storeEvery="50000">
+		<init id="SBI" spec="tnt.util.TransmissionTreeInitializer"
+			estimate="true" transmissionTree="@transmissionTree">
+			<patientTaxonSets idref="taxon_B" />
+			<patientTaxonSets idref="taxon_A" />
+			<patientTaxonSets idref="taxon_C" />
+			<patientTaxonSets idref="taxon_D" />
+			<patientTaxonSets idref="taxon_E" />
+			<patientTaxonSets idref="taxon_F" />
+			<patientTaxonSets idref="taxon_H" />
+			
+			<geneTreeInitializerList spec="GeneTreeInitializer">
+				<geneTree idref="geneTree.env" />
+				<sampleCounts spec="TraitSet" traitname="sampleCounts"
+				taxa="@taxonSet">
+					L_06=7,E_06=11,A_06=8,A_05_2=7,A_05=8,F_05=1,E_05_2=7,E_05=14,K_04=3,C_03=10,D_03=13,F_02=13,G_02=10,C_02=12,D_01=7,E_01=9,A_00=9,I_99=3,D_99=11,H_98=11,B_96=9,H_96=6,A_96=2,C_94=15,B_90=6
+				</sampleCounts>			
+			</geneTreeInitializerList>
+			<geneTreeInitializerList spec="GeneTreeInitializer">
+				<geneTree idref="geneTree.pol" />
+				<sampleCounts spec="TraitSet" traitname="sampleCounts"
+				taxa="@taxonSet">
+					A_96=11,A_00=10,A_05=10,A_05_2=8, A_06=0, B_90=8,B_96=13,C_94=4,C_02=7,C_03=10,D_99=9,D_01=9,D_03=13,E_01=11,E_05=10,E_05_2=13,E_06=14,F_02=10,F_05=9,G_02=4,H_96=11,H_98=8,I_99=10,K_04=13,L_06=12
+				</sampleCounts>			
+			</geneTreeInitializerList>
+		
+			<birthRate spec="RealParameter" value="1.6" />
+			<deathRate spec="RealParameter" value="0.3" />
+			<samplingRate spec="RealParameter" value="0.2" />
+			<populationSizes idref="popSize.env_pol" />
+			<rho spec="RealParameter" value="1.0"/>
+			<bottleneckStrength spec="RealParameter"
+				value="0.2" />
+			<origin idref="origin" />
+		</init>
+		
+
+		<state id="state" storeEvery="10000">
+
+			<stateNode id="transmissionTree" spec="TransmissionTree"
+				taxonset="@taxonsuperset" adjustTreeNodeHeights="false"
+				trait="@tipDates" />
+
+			<stateNode idref="origin" />
+			<stateNode idref="R0" />
+			<stateNode idref="becomeUninfectiousRate" />
+			<stateNode idref="samplingProportion" />
+			<stateNode idref="removalProbability" />
+
+			<parameter id="popSize.env_pol" name="stateNode"
+				value="2.02565541162204" />
+<!-- 			<parameter id="popSize.pol" name="stateNode" -->
+<!-- 				value="2.02565541162204" /> -->
+			<parameter id="pairwiseCoalProbBottleneck.env_pol" name="stateNode"
+				value="0.1" />
+<!-- 			<parameter id="pairwiseCoalProbBottleneck.env" name="stateNode" -->
+<!-- 				value="0.2" /> -->
+
+			<tree id="geneTree.env" name="stateNode">
+				<taxonset id="TaxonSet.env" spec="TaxonSet">
+					<alignment idref="env" />
+				</taxonset>
+			</tree>
+			
+			<tree id="geneTree.pol" name="stateNode">
+				<taxonset id="TaxonSet.pol" spec="TaxonSet">
+					<alignment idref="pol" />
+				</taxonset>
+			</tree>
+			
+
+
+			<parameter id="clockRate.c:env" lower="0.0"
+				name="stateNode">0.005</parameter>
+			<parameter id="clockRate.c:pol" lower="0.0"
+				name="stateNode">0.005</parameter>
+
+			<stateNode idref="freqParameter.env" />
+			<stateNode idref="freqParameter.pol" />
+			<stateNode idref="gammaShape.env" />
+			<stateNode idref="gammaShape.pol" />
+			<parameter dimension="1" id="rateAC.env" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateGT.env" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateAT.env" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateCG.env" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateCT.env" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+				
+			<parameter dimension="1" id="rateAC.pol" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateGT.pol" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateAT.pol" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateCG.pol" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+			<parameter dimension="1" id="rateCT.pol" lower="0.0"
+				upper="100.0" name="stateNode" value="1.0" />
+
+
+		</state>
+
+
+
+
+		<distribution id="posterior"
+			spec="util.CompoundDistribution">
+
+			<distribution id="samplingDistribution"
+				spec="SamplingConstraint">
+				<transmissionTree idref="transmissionTree" />
+				<taxonsets idref="taxon_B" />
+				<taxonsets idref="taxon_A" />
+				<taxonsets idref="taxon_C" />
+				<taxonsets idref="taxon_D" />
+				<taxonsets idref="taxon_E" />
+				<taxonsets idref="taxon_F" />
+				<taxonsets idref="taxon_H" />
+			</distribution>
+			<distribution id="geneTreesLikelihood" spec="CompoundDistribution">
+				
+				<distribution id="treeLikelihood.env" spec="TreeLikelihood">
+					<data idref="env" />
+					<tree idref="geneTree.env" />
+                    <branchRateModel id="StrictClock.c:env" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:env"/>
+					<siteModel idref="SiteModel.env" />
+				</distribution>
+				
+				<distribution id="treeLikelihood.pol" spec="TreeLikelihood">
+					<data idref="pol" />
+					<tree idref="geneTree.pol" />
+                    <branchRateModel id="StrictClock.c:pol" spec="beast.evolution.branchratemodel.StrictClockModel" clock.rate="@clockRate.c:pol"/>
+                    <siteModel idref="SiteModel.pol" />
+				</distribution>			
+				
+
+			</distribution>
+
+
+			<distribution id="multiCoalescent"
+				spec="util.CompoundDistribution">
+				<distribution spec="beast.math.distributions.Prior"
+					x="@popSize.env_pol">
+					<distr
+						spec="beast.math.distributions.LogNormalDistributionModel" M="2"
+						S="0.5" meanInRealSpace="true" />
+				</distribution>
+<!-- 				<distribution spec="beast.math.distributions.Prior" -->
+<!-- 					x="@popSize.env_pol"> -->
+<!-- 					<distr -->
+<!-- 						spec="beast.math.distributions.LogNormalDistributionModel" M="2" -->
+<!-- 						S="0.5" meanInRealSpace="true" /> -->
+<!-- 				</distribution> -->
+				<distribution spec="beast.math.distributions.Prior"
+					x="@pairwiseCoalProbBottleneck.env_pol">
+                    <Beta id="Beta.0" name="distr">
+                        <parameter id="RealParameter.1" spec="parameter.RealParameter" estimate="false" name="alpha">3.0</parameter>
+                        <parameter id="RealParameter.2" spec="parameter.RealParameter" estimate="false" name="beta">1.5</parameter>
+                    </Beta>
+				</distribution>
+<!-- 				<distribution spec="beast.math.distributions.Prior" -->
+<!-- 					x="@pairwiseCoalProbBottleneck.pol"> -->
+<!-- 					<distr spec="beast.math.distributions.Uniform" lower="0.0" -->
+<!-- 						upper="1.0" offset="0." /> -->
+<!-- 				</distribution> -->
+				<distribution id="geneTreeDistribution.env"
+					spec="SkyGeneTreeDistribution" populationSizes="@popSize.env_pol"
+					ploidy="1.0" pairwiseProbBottleneck="@pairwiseCoalProbBottleneck.env_pol"
+					parameterization="@parameterization" popSizePerBranch="false" popSizeAboveOrigin="false">
+					<geneTreeIntervals id="geneTreeIntervals.env"
+						spec="GeneTreeIntervals" geneTree="@geneTree.env"
+						transmissionTree="@transmissionTree" />
+				</distribution>
+				
+				<distribution id="geneTreeDistribution.pol"
+					spec="SkyGeneTreeDistribution" populationSizes="@popSize.env_pol"
+					ploidy="1.0" pairwiseProbBottleneck="@pairwiseCoalProbBottleneck.env_pol"
+					parameterization="@parameterization" popSizePerBranch="false" popSizeAboveOrigin="false">
+					<geneTreeIntervals id="geneTreeIntervals.pol"
+						spec="GeneTreeIntervals" geneTree="@geneTree.pol"
+						transmissionTree="@transmissionTree" />
+				</distribution>
+				
+			</distribution>
+			<distribution id="prior"
+				spec="util.CompoundDistribution">
+				<distribution idref="bdPrior" />
+				<distribution id="reproductiveNumber_prior"
+					spec="beast.math.distributions.Prior" x="@R0">
+					<LogNormal name="distr" M="0.5" S="1." offset="0." />
+				</distribution>
+				<distribution id="becomeUninf_prior"
+					spec="beast.math.distributions.Prior" x="@becomeUninfectiousRate">
+					<LogNormal name="distr" M="-1." S="1." offset="0." />
+				</distribution>
+				<distribution id="samplingProportion_prior"
+					spec="beast.math.distributions.Prior" x="@samplingProportion">
+					<Uniform name="distr" lower="0." upper="1." offset="0." />
+				</distribution>
+				<distribution id="removalProbability_prior"
+					spec="beast.math.distributions.Prior" x="@removalProbability">
+					<Beta name="distr" alpha="5.0" beta="2.0" />
+				</distribution>
+				<distribution id='origin_Prior' x="@origin"
+					spec='beast.math.distributions.Prior'>
+					<LogNormal name="distr" M="20.0" S="0.1"
+						meanInRealSpace="true" offset="0." />
+				</distribution>
+				
+				<distribution id="gtr.frequencies.prior.env"
+					spec="beast.math.distributions.Prior" x="@freqParameter.env">
+					<distr id="Uniform.1" lower="0.0" upper="1.0"
+						spec="beast.math.distributions.Uniform" />
+				</distribution>
+				
+				<distribution id="gtr.frequencies.prior.pol"
+					spec="beast.math.distributions.Prior" x="@freqParameter.pol">
+					<distr id="Uniform.2" lower="0.0" upper="1.0"
+						spec="beast.math.distributions.Uniform" />
+				</distribution>
+
+				<prior id="clockRatePrior.c:env" name="distribution"
+					x="@clockRate.c:env">
+					<LogNormal meanInRealSpace="true" name="distr">
+						<parameter id="clockRatePriorMean.s:env"
+							estimate="false" lower="0.0" name="M">0.002</parameter>
+						<parameter id="clockRatePriorStdev.s:env"
+							estimate="false" lower="0.0" name="S">0.6</parameter>
+					</LogNormal>
+				</prior>
+				
+				<prior id="clockRatePrior.c:pol" name="distribution"
+					x="@clockRate.c:pol">
+					<LogNormal meanInRealSpace="true" name="distr">
+						<parameter id="clockRatePriorMean.s:pol"
+							estimate="false" lower="0.0" name="M">0.002</parameter>
+						<parameter id="clockRatePriorStdev.s:pol"
+							estimate="false" lower="0.0" name="S">0.6</parameter>
+					</LogNormal>
+				</prior>
+			</distribution>
+		</distribution>
+
+		<operator id='becomeUninfectiousRate_scaler'
+			spec='ScaleOperator' scaleFactor=".75" weight="10"
+			parameter="@becomeUninfectiousRate" />
+		<operator id='reproductiveNumber_scaler' spec='ScaleOperator'
+			scaleFactor=".75" weight="10" parameter="@R0" />
+
+		<operator id="updown" spec="UpDownOperator" scaleFactor=".75"
+			weight="10">
+			<up idref="R0" />
+			<down idref="becomeUninfectiousRate" />
+		</operator>
+
+		<operator id='orig_scaler' spec='ScaleOperator'
+			scaleFactor=".75" weight="1" parameter="@origin" />
+
+		<operator id='clock.rate_Scaler.env' spec='ScaleOperator'
+			scaleFactor=".75" weight="3" parameter="@clockRate.c:env" />
+		
+		<operator id='clock.rate_Scaler.pol' spec='ScaleOperator'
+			scaleFactor=".75" weight="3" parameter="@clockRate.c:pol" />
+		
+		<operator id='removalProbabilityScaler'
+			spec='ScaleOperator' scaleFactor=".9" weight="1"
+			parameter="@removalProbability" />
+
+		<operator id="bottleneckOperator.env" spec="ScaleOperator"
+			weight="6.0" scaleFactor="0.5" optimise="true"
+			parameter="@pairwiseCoalProbBottleneck.env_pol">
+		</operator>
+		
+<!-- 		<operator id="bottleneckOperator.pol" spec="ScaleOperator" -->
+<!-- 			weight="6.0" scaleFactor="0.5" optimise="true" -->
+<!-- 			parameter="@pairwiseCoalProbBottleneck.pol"> -->
+<!-- 		</operator> -->
+
+		<operator id="PopSizeScaler.env" spec="ScaleOperator"
+			weight="3.0" scaleFactor="0.25" optimise="true" scaleAll="true" parameter="@popSize.env_pol">
+		</operator>
+
+		<operator id="updownAll:0" spec="UpDownOperator"
+				  scaleFactor="0.978" weight="1.0">
+			<up idref="pairwiseCoalProbBottleneck.env_pol" />
+			<down idref="popSize.env_pol" />
+		</operator>
+
+
+<!-- 		<operator id="PopSizeScaler.pol" spec="ScaleOperator" -->
+<!-- 			weight="6.0" scaleFactor="0.25" optimise="false" parameter="@popSize.pol"> -->
+<!-- 		</operator> -->
+
+		<operator id="updownAll:1" spec="UpDownOperator"
+			scaleFactor="0.978" weight="6.0">
+			<up idref="clockRate.c:env" />
+			<up idref="clockRate.c:pol" />
+
+			<down idref="popSize.env_pol" />
+<!-- 			<down idref="popSize.pol" /> -->
+			<down idref="transmissionTree" />
+			<down idref="geneTree.env" />
+			<down idref="geneTree.pol" />
+		</operator>
+		
+		<operator id="upDown:env" spec="UpDownOperator"
+			scaleFactor="0.959" weight="3.0">
+			<up idref="clockRate.c:env" />
+			<down idref="geneTree.env" />
+		</operator>
+		
+		<operator id="upDownAll:pol" spec="UpDownOperator"
+			scaleFactor="0.976" weight="3.0">
+			<up idref="clockRate.c:pol" />
+			<down idref="geneTree.pol" />
+		</operator>
+
+		<operator id="SwapOrientations"
+			spec="tnt.operators.SwapOrientations" tree="@transmissionTree" weight="20.0" >
+			<geneTreeIntervals idref="geneTreeIntervals.env"/>
+			<geneTreeIntervals idref="geneTreeIntervals.pol"/>
+		</operator>
+
+		<operator id="SAWilsonBaldingFBD"
+			spec="tnt.operators.SAWilsonBalding" tree="@transmissionTree" weight="75.0" allowSaCreation="false">
+			<geneTreeIntervals idref="geneTreeIntervals.env"/>
+			<geneTreeIntervals idref="geneTreeIntervals.pol"/>
+		</operator>
+
+		<operator id="SAUniform" spec="tnt.operators.SAUniform"
+			tree="@transmissionTree" weight="30.0">
+			<geneTreeIntervals idref="geneTreeIntervals.env"/>
+			<geneTreeIntervals idref="geneTreeIntervals.pol"/>
+		</operator>
+		
+		<operator spec="TnTExchange" id="TrExNarrow" tree="@transmissionTree"
+			 weight="40.0">
+			<geneTreeIntervals idref="geneTreeIntervals.env"/>
+			<geneTreeIntervals idref="geneTreeIntervals.pol"/>
+		</operator>
+
+		<operator id="coordinatedUniform"
+			spec="tnt.operators.CoordinatedUniform"
+			speciesTree="@transmissionTree" weight="30.0">
+			<geneTree idref="geneTree.env" />
+			<geneTree idref="geneTree.pol" />
+		</operator>
+
+		<operator id="coordinatedExponential"
+			spec="tnt.operators.CoordinatedExponential"
+			speciesTree="@transmissionTree" weight="20.0">
+			<geneTreeIntervals idref="geneTreeIntervals.env"/>
+			<geneTreeIntervals idref="geneTreeIntervals.pol"/>
+			<geneTree idref="geneTree.env" />
+			<geneTree idref="geneTree.pol" />
+		</operator>
+
+		<operator spec="tnt.operators.SPROperator" id="SPR.env"
+			tree="@geneTree.env" transmissionTree="@transmissionTree"
+			geneTreeIntervals="@geneTreeIntervals.env" weight="60.0"
+			probBottleneck="0.5" rootAttachLambda="0.5" />
+			
+		<operator spec="tnt.operators.SPROperator" id="SPR.pol"
+			tree="@geneTree.pol" transmissionTree="@transmissionTree"
+			geneTreeIntervals="@geneTreeIntervals.pol" weight="60.0"
+			probBottleneck="0.5" rootAttachLambda="0.5" />
+
+		<operator spec="TransmissionAttach" id="trAttach.env"
+			tree="@geneTree.env" rootAttachLambda="0.5"
+			geneTreeIntervals="@geneTreeIntervals.env" weight="75.0" />
+			
+		<operator spec="TransmissionAttach" id="trAttach.pol"
+			tree="@geneTree.pol" rootAttachLambda="0.5"
+			geneTreeIntervals="@geneTreeIntervals.pol" weight="75.0" />
+
+		<operator spec="CreateMergersOrReheight" id="CMOR.env"
+			tree="@geneTree.env" mergerProb="0.1"
+			transmissionTree="@transmissionTree" weight="30.0" />
+		
+		<operator spec="CreateMergersOrReheight" id="CMOR.pol"
+			tree="@geneTree.pol" mergerProb="0.1"
+			transmissionTree="@transmissionTree" weight="30.0" />
+
+<!-- 		<operator spec="ExpandCollapseOperator" id="EC.env"
+ 			tree="@geneTree.env" geneTreeIntervals="@geneTreeIntervals.env" weight="50.0" />
+			
+ 		<operator spec="ExpandCollapseOperator" id="EC.pol"
+ 			tree="@geneTree.pol" geneTreeIntervals="@geneTreeIntervals.pol" weight="50.0" />-->
+
+		<operator spec="ExchangeOperator" id="Ex.env" tree="@geneTree.env"
+			geneTreeIntervals="@geneTreeIntervals.env" weight="50.0" />
+			
+		<operator spec="ExchangeOperator" id="Ex.pol" tree="@geneTree.pol"
+			geneTreeIntervals="@geneTreeIntervals.pol" weight="50.0" />
+
+
+
+
+		<operator spec='ScaleOperator' id='scalerAC.env'
+			scaleFactor=".75" weight=".2" parameter="@rateAC.env" />
+		<operator spec='ScaleOperator' id='scalerAT.env'
+			scaleFactor=".75" weight=".2" parameter="@rateAT.env" />
+		<operator spec='ScaleOperator' id='scalerCG.env'
+			scaleFactor=".75" weight=".2" parameter="@rateCG.env" />
+		<operator spec='ScaleOperator' id='scalerCT.env'
+			scaleFactor=".75" weight=".2" parameter="@rateCT.env" />
+		<operator spec='ScaleOperator' id='scalerGT.env'
+			scaleFactor=".75" weight=".2" parameter="@rateGT.env" />
+			
+		<operator spec='ScaleOperator' id='scalerAC.pol'
+			scaleFactor=".75" weight=".2" parameter="@rateAC.pol" />
+		<operator spec='ScaleOperator' id='scalerAT.pol'
+			scaleFactor=".75" weight=".2" parameter="@rateAT.pol" />
+		<operator spec='ScaleOperator' id='scalerCG.pol'
+			scaleFactor=".75" weight=".2" parameter="@rateCG.pol" />
+		<operator spec='ScaleOperator' id='scalerCT.pol'
+			scaleFactor=".75" weight=".2" parameter="@rateCT.pol" />
+		<operator spec='ScaleOperator' id='scalerGT.pol'
+			scaleFactor=".75" weight=".2" parameter="@rateGT.pol" />
+			
+		<operator id='gammaShapeScaler.env' spec='ScaleOperator'
+			scaleFactor=".75" weight=".3" parameter="@gammaShape.env" />
+		<operator id='gammaShapeScaler.pol' spec='ScaleOperator'
+			scaleFactor=".75" weight=".3" parameter="@gammaShape.pol" />
+			
+		<operator autoOptimize="true" delta="0.2"
+			id="FrequenciesExchanger.env" integer="false"
+			spec="DeltaExchangeOperator" weight="1" parameter="@freqParameter.env" />
+		<operator autoOptimize="true" delta="0.2"
+			id="FrequenciesExchanger.pol" integer="false"
+			spec="DeltaExchangeOperator" weight="1" parameter="@freqParameter.pol" />
+
+
+		<logger id="treelog.t:env" fileName="$(filebase).env.trees"
+			logEvery="50000" mode="tree">
+			<log id="TreeWithMetaDataLogger.t:env"
+				spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@geneTree.env" />
+		</logger>
+		
+		<logger id="treelog.t:pol" fileName="$(filebase).pol.trees"
+			logEvery="50000" mode="tree">
+			<log id="TreeWithMetaDataLogger.t:pol"
+				spec="beast.evolution.tree.TreeWithMetaDataLogger" tree="@geneTree.pol" />
+		</logger>
+
+		<logger id="treelog.t:tr"
+			fileName="$(filebase).transmission.trees" logEvery="50000" mode="tree">
+			<log id="TreeWithMetaDataLogger.t:tr"
+				spec="tnt.logger.TransmissionTreeLogger"
+				transmissionTree="@transmissionTree">
+				<geneTree idref="geneTree.env"/>
+				<geneTree idref="geneTree.pol"/>
+			</log>
+		</logger>
+		
+
+		<logger logEvery="50000" fileName="$(filebase).log">
+			<distribution idref="posterior" name="log" />
+			<log idref="multiCoalescent" />
+			<log idref="bdPrior" />
+			<log idref="geneTreesLikelihood" />
+			
+			<log idref="treeLikelihood.env" />
+			<log id="treeHeightGene.env"
+				spec="beast.evolution.tree.TreeStatLogger" tree="@geneTree.env" />
+					
+			<log idref="treeLikelihood.pol" />
+			<log id="treeHeightGene.pol"
+				spec="beast.evolution.tree.TreeStatLogger" tree="@geneTree.pol" />
+			
+			
+			
+			<log id="treeHeightTransmission"
+				spec="beast.evolution.tree.TreeStatLogger" tree="@transmissionTree" />
+			<log id="SACount"
+				spec="beast.evolution.tree.SampledAncestorLogger"
+				tree="@transmissionTree" />
+
+			<log idref="origin" />
+			<log idref="R0" />
+			<log idref="becomeUninfectiousRate" />
+			<log idref="samplingProportion" />
+			<log idref="removalProbability" />
+			<log idref="rhoSampling" />
+			<log idref="pairwiseCoalProbBottleneck.env_pol" />
+<!-- 			<log idref="pairwiseCoalProbBottleneck.pol" /> -->
+			<log idref="popSize.env_pol" />
+<!-- 			<log idref="popSize.pol" /> -->
+
+
+			<log idref="clockRate.c:env" />	
+			<log idref="clockRate.c:pol" />	
+			
+			<log idref="gammaShape.env" />
+			<log idref="freqParameter.env" />
+			<log idref="rateAC.env" />
+			<log idref="rateAG.env" />
+			<log idref="rateAT.env" />
+			<log idref="rateCG.env" />
+			<log idref="rateCT.env" />
+			<log idref="rateGT.env" />
+			
+			<log idref="gammaShape.env" />
+			<log idref="freqParameter.pol" />
+			<log idref="rateAC.pol" />
+			<log idref="rateAG.pol" />
+			<log idref="rateAT.pol" />
+			<log idref="rateCG.pol" />
+			<log idref="rateCT.pol" />
+			<log idref="rateGT.pol" />
+			
+			<log spec="tnt.util.PolytomyStatsLogger" tree="@geneTree.env" maxOrder="25"/>
+			<log spec="tnt.util.PolytomyStatsLogger" tree="@geneTree.pol" maxOrder="25"/>
+		</logger>
+
+
+		<logger id="screenlog" logEvery="1000000" mode="autodetect">
+			<distribution idref="posterior" name="log" />
+			<log arg="@posterior" id="ESS.0" spec="util.ESS" />
+			<log idref="treeHeightGene.env" />
+			<log idref="treeHeightGene.pol" />
+			<log idref="treeHeightTransmission" />
+		</logger>
+
+	</run>
+
+</beast>    
